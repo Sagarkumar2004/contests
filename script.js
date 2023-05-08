@@ -1,6 +1,8 @@
 
  let url = "https://kontests.net/api/v1/all"
 
+ document.body.style.backgroundColor = "rgba(67, 101, 119, 1.255);"
+
 //  let image =["" ]
 
 let response = fetch(url)
@@ -28,7 +30,7 @@ response.then((v)=>{
           <p class="card-text"> Start at : ${contests[item].start_time= new Date()}</p>
           <p class="card-text"> Start at : ${contests[item].end_time = new Date()}</p>
           <p class="card-text"> In 24 hours : ${contests[item].in_24_hours}</p>
-          <a href="${contests[item].url}" class="btn btn-primary">visit here</a>
+          <a href="${contests[item].url}" class="btn btn-success">visit here</a>
         </div>
       </div> `
 
