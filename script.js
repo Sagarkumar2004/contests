@@ -27,8 +27,8 @@ response.then((v)=>{
         <div class="card-body">
           <h5 class="card-title">${contests[item].name}</h5>
           <h6 class="card-title">${contests[item].site}</h6>
-          <p class="card-text"> Start at : ${contests[item].start_time= new Date()}</p>
-          <p class="card-text"> Start at : ${contests[item].end_time = new Date()}</p>
+          <p class="card-text"> Start at : ${new Date(contests[item].start_time)}</p>
+          <p class="card-text"> End at : ${new Date(contests[item].end_time)}</p>
           <p class="card-text"> In 24 hours : ${contests[item].in_24_hours}</p>
           <a href="${contests[item].url}" class="btn btn-success">visit here</a>
         </div>
